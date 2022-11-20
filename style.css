@@ -8,6 +8,49 @@ body {
     background-color: lightgray;
     justify-content: center;
 }
+.termo{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.termo img{
+    margin-top:30px;
+    width:217px;
+    height: 51px;
+}
+.termo strong{
+    font-size: 18px;
+    text-decoration: underline;
+}
+.termo span{
+     color:#FFF;
+}
+.termo h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+    text-shadow:
+        -1px -1px 0px #fff,
+        -1px 1px 0px #000,
+        1px -1px 0px #fff,
+        1px 0px 0px #000; 
+}
+.termo button{
+    background-color: salmon;
+    border-color: salmon;
+    border-radius:5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.termo div{
+    padding-left:30px;
+    padding-right:30px;
+    margin-top:20px;
+    line-height: 30px;
+}
 
 .container-inicial {
     display: flex;
@@ -15,7 +58,7 @@ body {
     align-items: center;
 }
 
-h1 {
+.container-inicial h1 {
     font-size: 50px;
     text-align: center;
     margin-top: 15px;
@@ -128,5 +171,11 @@ form{
 @media (min-width: 614px){
     .question {
     width: 100%;
+}
+.termo{
+    width: 600px;
+}
+.termo div{
+    width: 450px;
 }
 }

@@ -1,5 +1,12 @@
 let resposta1, resposta2, resposta3, resposta4, resposta5, resposta6, resposta7, resposta8, resposta9, resposta10, resposta11, resposta12, resposta13, resposta14
+let pontosTotais;
 
+function concordoContinuar(){
+    const termo= document.querySelector(".termo")
+    termo.classList.add("escondido")
+    const telaInicial = document.querySelector(".container-inicial")
+    telaInicial.classList.remove("escondido")
+}
 
 function iniciarTeste() {
     const telaInicial = document.querySelector(".container-inicial")
@@ -17,7 +24,7 @@ function pergunta1(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta1)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -34,7 +41,7 @@ function pergunta2(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta2)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -51,7 +58,7 @@ function pergunta3(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta3)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -68,7 +75,7 @@ function pergunta4(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta4)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -85,7 +92,7 @@ function pergunta5(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta5)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -102,7 +109,7 @@ function pergunta6(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta6)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -119,7 +126,7 @@ function pergunta7(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta7)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -136,7 +143,7 @@ function pergunta8(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta8)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -153,7 +160,7 @@ function pergunta9(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta9)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -170,7 +177,7 @@ function pergunta10(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta10)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -187,7 +194,7 @@ function pergunta11(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta11)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -204,7 +211,7 @@ function pergunta12(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta12)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -221,7 +228,7 @@ function pergunta13(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta13)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -238,7 +245,7 @@ function pergunta14(item) {
 
     const pai=item.parentNode 
     const filhas= pai.querySelectorAll(".sem-click")
-    console.log(filhas)
+    console.log(resposta14)
     for(let i=0;i<filhas.length;i++){
     filhas[i].classList.add("escondido")
     }
@@ -246,6 +253,8 @@ function pergunta14(item) {
     const enviar= document.querySelector(".enviar")
     enviar.classList.remove("escondido")
     enviar.scrollIntoView()
+    pontosTotais=(resposta1+resposta2+resposta3+resposta4+resposta5+resposta6+resposta7+resposta8+resposta9+resposta10+resposta11+resposta12+resposta13+resposta14)
+    console.log(pontosTotais)
 }
 
 
