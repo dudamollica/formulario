@@ -45,7 +45,7 @@ body {
     font-size: 18px;
     margin-top: 10px;
 }
-.termo div{
+.termo div, .resultado p{
     padding-left:30px;
     padding-right:30px;
     margin-top:20px;
@@ -58,7 +58,7 @@ body {
     align-items: center;
 }
 
-.container-inicial h1 {
+.container-inicial h1, .resultado h1{
     font-size: 50px;
     text-align: center;
     margin-top: 15px;
@@ -163,10 +163,16 @@ form{
     border-color: dodgerblue;
     cursor: pointer;
 }
+.resultado p{
+font-size: 25px;
+text-align: center;
+margin-bottom: 30px;
+}
 
 .escondido {
     display: none;
 }
+
 
 @media (min-width: 614px){
     .question {
@@ -177,5 +183,8 @@ form{
 }
 .termo div{
     width: 450px;
+}
+.resultado p{
+    width: 600px;
 }
 }
